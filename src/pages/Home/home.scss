@@ -1,0 +1,71 @@
+@import "src/utils/vars.scss";
+
+.home{
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundColor;
+  height: 100vh;
+  color:$spacialTextColor;
+
+  .homeBody{
+    display: flex;
+    @media (max-width: $bp-small) {
+      flex-direction: column-reverse;
+
+    }
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    .content{
+      display: flex;
+      font-size: $base-font-size*2;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .myNameColor{
+        font-weight: bold;
+        color: $secondary-color;
+        text-shadow: 0 0 10px #000;
+      }
+      .typing{
+        font-size: $base-font-size*2.5;
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .button{
+          width: 10*$base-font-size;
+          height: 3*$base-font-size;
+          border-radius: 5rem;
+          background-color: $primary-color;
+          color: #fff;
+          font-size: $base-font-size;
+          font-weight: bold;
+          cursor: pointer;
+          border-color: $spacialTextColor;
+          margin: 2*$base-font-size
+        }
+        .downloadResumeButton{
+          background-color: $primary-color;
+        }
+        .hireMeButton{
+          background-color: $secondary-color;
+        }
+      }
+    }
+    .imageDiv{
+      width: 100%;
+      .image{
+        max-width: 50%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border-color: $secondary-color;
+        border-width: 5px;
+        border-style: solid;
+      }
+    }
+  }
+
+}

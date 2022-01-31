@@ -1,0 +1,17 @@
+@import "src/utils/vars.scss";
+.navBar{
+  padding-top: 3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 10vh;
+  .myName{
+    font-size: $base-font-size * 2;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+  }
+}
