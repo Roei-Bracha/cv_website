@@ -1,0 +1,22 @@
+@import "src/Utils/vars.scss";
+
+.Resume{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width:100%;
+  .timelineImage{
+    min-height: 2*$base-font-size;
+    min-width: 2*$base-font-size;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .resumeCardContent{
+
+  }
+  div:has(#bsc){
+    background-color: #61dafb;
+    height: 20px;
+  }
+}
